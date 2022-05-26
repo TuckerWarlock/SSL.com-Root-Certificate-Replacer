@@ -57,7 +57,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\BS-SSL-Installer.msi"
+        "OutputFilename" = "8:Debug\\SSL-Installer.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -89,7 +89,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\BS-SSL-Installer.msi"
+        "OutputFilename" = "8:Release\\SSL-Installer.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -177,7 +177,7 @@
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AAD7AAB33E424F9FA730C0DFFB2D828A"
             {
-            "SourcePath" = "8:..\\BS-SSL-Fix\\bin\\Debug\\B7AB3308D1EA4477BA1480125A6FBDA936490CBB.crt"
+            "SourcePath" = "8:..\\SSL-Fix\\bin\\Debug\\B7AB3308D1EA4477BA1480125A6FBDA936490CBB.crt"
             "TargetName" = "8:B7AB3308D1EA4477BA1480125A6FBDA936490CBB.crt"
             "Tag" = "8:"
             "Folder" = "8:_FA4F4C31315C4CEAA8A9207D0925073B"
@@ -197,7 +197,7 @@
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B6D70A3F014C43C3B6D3A0C7DB4D736C"
             {
-            "SourcePath" = "8:..\\BS-SSL-Fix\\favicon.ico"
+            "SourcePath" = "8:..\\SSL-Fix\\favicon.ico"
             "TargetName" = "8:favicon.ico"
             "Tag" = "8:"
             "Folder" = "8:_FA4F4C31315C4CEAA8A9207D0925073B"
@@ -829,7 +829,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_D803245797E74593A4B9A9F15B2D26A4"
             {
-            "SourcePath" = "8:..\\BS-SSL-Fix\\obj\\Debug\\BS-SSL-Fix.exe"
+            "SourcePath" = "8:..\\SSL-Fix\\obj\\Debug\\SSL-Fix.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_FA4F4C31315C4CEAA8A9207D0925073B"
