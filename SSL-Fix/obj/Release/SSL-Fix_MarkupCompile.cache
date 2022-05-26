@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\tucke\Desktop\C# Projects\SSL.com-Root-Certificate-Replacer\SSL-Fix\obj\Debug\
+C:\Users\tucke\Desktop\C# Projects\SSL.com-Root-Certificate-Replacer\SSL-Fix\obj\Release\
 SSL_Fix
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\tucke\Desktop\C# Projects\SSL.com-Root-Certificate-Replacer\SSL-Fix\App.xaml
 1219584333
 
@@ -16,5 +16,5 @@ C:\Users\tucke\Desktop\C# Projects\SSL.com-Root-Certificate-Replacer\SSL-Fix\App
 13-1749376338
 MainWindow.xaml;
 
-False
+True
 
