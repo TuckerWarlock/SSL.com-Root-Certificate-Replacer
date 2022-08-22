@@ -1,0 +1,182 @@
+﻿<Window x:Class="SSL_Fix.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SSL_Fix"
+        mc:Ignorable="d"
+        Title="SSL Tester" Height="215" Width="420" 
+        WindowStartupLocation="CenterScreen" Icon="favicon.ico">
+    <Grid>
+        <!--Set main Grid 2 x 3-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="15" />
+        </Grid.RowDefinitions>
+        <!--Run Button-->
+        <Button Margin="10,10,10,10" Click="Run_Button_Click" FontWeight="Bold" BorderThickness="1.5" Grid.Column="0" Grid.Row="0" x:Name="RunButton" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="CornflowerBlue"/>
+                    <Setter Property="Foreground" Value="Black"/>
+                    <Setter Property="Content" Value="Test Me?"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="DodgerBlue"/>
+                            <Setter Property="Foreground" Value="FloralWhite"/>
+                            <Setter Property="Content" Value="Click Me!"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <!--Status Button-->
+        <Button Margin="0,10,0,10" Grid.Column="1" Grid.Row="0" x:Name="StatusButton" Visibility="Hidden" FontWeight="Bold" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Green"/>
+                            <Setter Property="Foreground" Value="FloralWhite"/>
+                            <Setter Property="Content" Value=""/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <!--Fix Button-->
+        <Button Margin="10,10,10,10" Click="Fix_Button_Click" FontWeight="Bold" BorderThickness="1.5" Grid.Column="3" Grid.Row="0" Visibility="Hidden" x:Name="FixButton">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="LightCoral"/>
+                    <Setter Property="Foreground" Value="Black"/>
+                    <Setter Property="Content" Value="Fix Me?"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="DarkRed"/>
+                            <Setter Property="Foreground" Value="FloralWhite"/>
+                            <Setter Property="Content" Value="Are you sure?"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <!--Clear Button-->
+        <Button Margin="10,10,10,10" Click="Clear_Button_Click" FontWeight="Bold" BorderThickness="1.5" Grid.Column="2" Grid.Row="0" Visibility="Hidden" x:Name="ClearButton" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="MediumPurple"/>
+                    <Setter Property="Foreground" Value="Black"/>
+                    <Setter Property="Content" Value="Clear Me?"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="DarkSlateBlue"/>
+                            <Setter Property="Foreground" Value="FloralWhite"/>
+                            <Setter Property="Content" Value="Clear Me!"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <!--Clear Button-->
+        <Button Margin="10,10,10,10" Click="Close_Button_Click" FontWeight="Bold" BorderThickness="1.5" Grid.Column="2" Grid.Row="0" Visibility="Hidden" x:Name="CloseButton" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="LightSeaGreen"/>
+                    <Setter Property="Foreground" Value="Black"/>
+                    <Setter Property="Content" Value="Close Me?"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Teal"/>
+                            <Setter Property="Foreground" Value="FloralWhite"/>
+                            <Setter Property="Content" Value="Close Me!"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <!--TCP and HTTPS result text-->
+        <TextBlock Margin="10,0,0,0" Grid.ColumnSpan="3" x:Name="HTTPSFailResults" Visibility="Hidden"></TextBlock>
+        <TextBlock Margin="10,5,0,0" Grid.ColumnSpan="3" x:Name="SSLKeyFailResults" Visibility="Hidden" FontWeight="Bold" HorizontalAlignment="Center" Foreground="Firebrick"></TextBlock>
+        <TextBlock Margin="0,0,0,0" Grid.ColumnSpan="3" x:Name="TCPFailResults" Visibility="Hidden" Background="Yellow"></TextBlock>
+        <!--Progress Bar-->
+        <ProgressBar x:Name="progressBar" VerticalAlignment="Bottom" Height="15" Margin="0,0,-4,0" Foreground="LimeGreen" Grid.ColumnSpan="3" Grid.Row="3" IsIndeterminate="True"/>
+    </Grid>
+</Window>

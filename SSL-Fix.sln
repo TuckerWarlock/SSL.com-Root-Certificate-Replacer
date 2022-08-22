@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSL-Fix", "SSL-Fix\SSL-Fix.csproj", "{20E4BD93-D414-4724-BC9E-DD474B63F3F8}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SSL-Installer", "SSL-Installer\SSL-Installer.vdproj", "{4622AF84-666A-4CB3-A058-1FA23424D6EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20E4BD93-D414-4724-BC9E-DD474B63F3F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E4BD93-D414-4724-BC9E-DD474B63F3F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20E4BD93-D414-4724-BC9E-DD474B63F3F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20E4BD93-D414-4724-BC9E-DD474B63F3F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4622AF84-666A-4CB3-A058-1FA23424D6EF}.Debug|Any CPU.ActiveCfg = Debug
+		{4622AF84-666A-4CB3-A058-1FA23424D6EF}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7C1E64E-0E76-4418-B30F-FD2F56FC4EBB}
+	EndGlobalSection
+EndGlobal
